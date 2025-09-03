@@ -1,3 +1,0 @@
-### Assess and troubleshoot cluster health
-
-Coming soon...

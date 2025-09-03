@@ -7,9 +7,3 @@
   vars:
     easytravel_namespace: "easytravel" # namespace that Easytravel will be deployed in
     easytravel_domain: "easytravel.{{ ingress_domain }}" #ingress domain for regular Easytravel
-
-- include_role:
-    name: dashboard
-  vars:
-    dashboard_user: "{{ dashboard_user }}"
-    dashboard_password: "{{ dashboard_password }}"
