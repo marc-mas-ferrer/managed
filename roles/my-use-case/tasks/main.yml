@@ -1,9 +1,12 @@
 ---
 - include_role:
-    name: "k3s"
+    name: microk8s
 
 - include_role:
-    name: app-easytrade
+    name: app-easytravel
+  vars:
+    easytravel_namespace: "easytravel" # namespace that Easytravel will be deployed in
+    easytravel_domain: "easytravel.{{ ingress_domain }}" #ingress domain for regular Easytravel
 
 - include_role:
     name: dashboard
