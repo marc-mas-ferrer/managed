@@ -10,5 +10,6 @@
 
 - include_role:
     name: dashboard
+  vars:
     dashboard_user: "{{ dashboard_user }}"
     dashboard_password: "{{ dashboard_password }}"
